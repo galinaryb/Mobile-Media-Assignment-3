@@ -25,7 +25,7 @@ int numberOfUnhelpfulReviews;
 @property(readwrite) int numberOfHelpfulReviews;
 @property(readwrite) int numberOfUnhelpfulReviews;
 
-
+-(int) total;
 
 
 

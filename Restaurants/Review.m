@@ -11,4 +11,10 @@
 @implementation Review
 @synthesize reviewer, text, score, numberOfHelpfulReviews, numberOfUnhelpfulReviews;
 
+-(int) total
+{
+    return numberOfHelpfulReviews + numberOfUnhelpfulReviews;
+}
+
+
 @end

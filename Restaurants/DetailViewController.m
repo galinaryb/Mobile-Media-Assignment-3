@@ -61,13 +61,16 @@
     review4.numberOfUnhelpfulReviews = 5;
 
     
-
     
     addressLabel.text = [restaurant address];
     navigationHeader.title = [restaurant name];
     cuisineLabel.text = [restaurant cuisineType];
     ageLabel.text = [NSString stringWithFormat:@"Est. %i (%i years ago)", restaurant.yearOpened, [restaurant age]];
     
+    
+    helpfulReviewLabel.text = [review1 text];
+    helpfulReviewPercentageLabel.text = [NSString stringWithFormat: @"%i out of %i found this review helpful", review1.numberOfHelpfulReviews, [review1 total]];
+ 
 }
 
 
