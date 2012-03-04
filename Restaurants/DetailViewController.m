@@ -31,6 +31,7 @@
     restaurant.cuisineType = @"Peruvian";
     restaurant.yearOpened = 1995;
 
+
 //    Review* review1 = [[Review alloc] init];
 //    review1.text = @"What fab-u-lass chicken! We could eat it all day if we didn't have to stop to drink sangria!";
 //    review1.reviewer = @"The Addams";
@@ -58,10 +59,10 @@
 //    review4.score = 4;
 //    review4.numberOfHelpfulReviews = 14;
 //    review4.numberOfUnhelpfulReviews = 5;
-    
+//    
 
     
-    
+
     
     addressLabel.text = [restaurant address];
     navigationHeader.title = [restaurant name];

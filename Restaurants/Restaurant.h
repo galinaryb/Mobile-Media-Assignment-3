@@ -11,7 +11,7 @@
     NSString* name;
     NSString* cuisineType;
     int yearOpened;
-    
+   
     
 }
 @property(readwrite, strong) NSString* address;
