@@ -16,6 +16,8 @@
     return numberOfHelpfulReviews + numberOfUnhelpfulReviews;
     
 }
+
+
 -(float) percentage
 {
     return numberOfHelpfulReviews / (numberOfHelpfulReviews + numberOfUnhelpfulReviews);

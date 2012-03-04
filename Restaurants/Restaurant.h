@@ -6,6 +6,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Restaurant : NSObject
+
 {
     NSString* address;
     NSString* name;
@@ -21,5 +22,6 @@
 @property(readwrite, strong) NSArray* reviews;
 
 -(int)age;
+-(Review*) mostHelpfulReview;
 
 @end
