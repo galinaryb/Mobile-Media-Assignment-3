@@ -27,6 +27,7 @@ int numberOfUnhelpfulReviews;
 @property(readwrite) int numberOfUnhelpfulReviews;
 
 -(int) total;
+-(float) percentage;
 
 
 
