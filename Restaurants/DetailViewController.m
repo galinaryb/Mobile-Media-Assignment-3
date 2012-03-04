@@ -25,11 +25,12 @@
 {
     [super viewDidLoad];
     restaurant = [[Restaurant alloc] init];
-    
     restaurant.name = @"Pio Pio";
     restaurant.address = @"746 First Avenue\nNew York, NY 10128";
     restaurant.cuisineType = @"Peruvian";
     restaurant.yearOpened = 1995;
+    
+    restaurant.reviews = [[NSArray alloc] initWithObjects:review1, review2, review3,review4, nil];
 
 
     Review* review1 = [[Review alloc] init];

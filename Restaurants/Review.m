@@ -14,7 +14,9 @@
 -(int) total
 {
     return numberOfHelpfulReviews + numberOfUnhelpfulReviews;
+    
 }
+
 
 
 @end
