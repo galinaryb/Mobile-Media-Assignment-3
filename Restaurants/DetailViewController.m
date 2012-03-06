@@ -70,7 +70,8 @@
     helpfulReviewPercentageLabel.text = [NSString stringWithFormat: @"%i out of %i found this review helpful", review1.numberOfHelpfulReviews, [review1 total]];
     
     restaurant.reviews = [[NSArray alloc] initWithObjects:review1, review2, review3,review4, nil];
-   
+    
+    [restaurant mostHelpfulReview];
 }
 
 

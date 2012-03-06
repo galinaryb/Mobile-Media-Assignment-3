@@ -20,7 +20,7 @@
 
 -(float) percentage
 {
-    return numberOfHelpfulReviews / (numberOfHelpfulReviews + numberOfUnhelpfulReviews);
+    return (float)numberOfHelpfulReviews / (numberOfHelpfulReviews + numberOfUnhelpfulReviews);
 }
 
 
