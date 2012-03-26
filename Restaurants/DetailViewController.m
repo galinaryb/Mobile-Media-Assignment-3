@@ -76,7 +76,13 @@
     
     
     helpfulReviewLabel.text = [review1 text];
+    if (helpfulReviewLabel.text == nil) {
+        helpfulReviewLabel.text = @"Not enough helpful reviews yet.";
+    }
     helpfulReviewPercentageLabel.text = [NSString stringWithFormat: @"%i out of %i found this review helpful", review1.numberOfHelpfulReviews, [review1 total]];
+    if (helpfulReviewPercentageLabel.text == nil){
+        helpfulReviewPercentageLabel.text = @" ";
+    }
    
     restaurant.reviews = [[NSMutableArray alloc] initWithObjects: review1, review2, review3, review4, review5, nil];
    
