@@ -59,6 +59,15 @@
     review4.numberOfHelpfulReviews = 14;
     review4.numberOfUnhelpfulReviews = 5;
 
+    Review* review5 = [[Review alloc] init];
+    [NSMutableArray addObject: review5.text];
+    review5.text = @"This restaurant is amazing!!!!";
+    review5.reviewer = @"Galina";
+    review5.score = 5;
+    review5.numberOfHelpfulReviews = 20;
+    review5.numberOfUnhelpfulReviews = 1;
+    
+    
     
     addressLabel.text = [restaurant address];
     navigationHeader.title = [restaurant name];
@@ -69,7 +78,8 @@
     helpfulReviewLabel.text = [review1 text];
     helpfulReviewPercentageLabel.text = [NSString stringWithFormat: @"%i out of %i found this review helpful", review1.numberOfHelpfulReviews, [review1 total]];
     
-    restaurant.reviews = [[NSArray alloc] initWithObjects:review1, review2, review3,review4, nil];
+    restaurant.reviews = [[NSArray alloc] initWithObjects:review1, review2, review3, review4, nil];
+   
     
     [restaurant mostHelpfulReview];
 }

@@ -30,6 +30,4 @@ int numberOfUnhelpfulReviews;
 -(float) percentage;
 
 
-
-
 @end

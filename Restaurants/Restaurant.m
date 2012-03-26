@@ -10,10 +10,13 @@
 @synthesize address, name, cuisineType, yearOpened, reviews;
 
 
+
+
 -(int)age
 {
     return 2012 - yearOpened;
 }
+
 
 -(Review*) mostHelpfulReview
 {
