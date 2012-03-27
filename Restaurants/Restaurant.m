@@ -38,10 +38,23 @@
                 mostHelpfulReview = review;
             }
         }
-
+        
     }
     
     NSLog (@"Review Text: %@", mostHelpfulReview.text);
     return mostHelpfulReview;
+    
+}
+
+-(float) averageCustomerReview{
+    int sum = 0;
+    for (Review* storage in reviews)
+    {
+        sum+= [storage score];  
+    }
+    
+    return (float) sum/[reviews count];
+    
+    
 }
 @end

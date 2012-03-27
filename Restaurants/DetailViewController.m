@@ -80,6 +80,7 @@
         helpfulReviewLabel.text = @"Not enough helpful reviews yet.";
     }
     helpfulReviewPercentageLabel.text = [NSString stringWithFormat: @"%i out of %i found this review helpful", review1.numberOfHelpfulReviews, [review1 total]];
+    
     if (helpfulReviewPercentageLabel.text == nil){
         helpfulReviewPercentageLabel.text = @" ";
     }
@@ -88,9 +89,29 @@
    
     
     [restaurant mostHelpfulReview];
+
+
+if (([restaurant averageCustomerReview] > 0.1) && ([restaurant averageCustomerReview] < 1.45)) {  
+    star1.image = [UIImage imageNamed:@"Star_ON.png"];
+}  
+    if (([restaurant averageCustomerReview] > 1.5) && ([restaurant averageCustomerReview] < 2.45)) {  
+        (star2.image = [UIImage imageNamed:@"Star_ON.png"]) && (star1.image = [UIImage imageNamed:@"Star_ON.png"]);
+    }  
+    if (([restaurant averageCustomerReview] > 2.5) && ([restaurant averageCustomerReview] < 3.45)) {  
+        (star2.image = [UIImage imageNamed:@"Star_ON.png"]) && (star1.image = [UIImage imageNamed:@"Star_ON.png"]) && (star3.image = [UIImage imageNamed:@"Star_ON.png"]);
+    } 
+    if (([restaurant averageCustomerReview] > 3.5) && ([restaurant averageCustomerReview] < 4.45)) {
+         (star2.image = [UIImage imageNamed:@"Star_ON.png"]) && (star1.image = [UIImage imageNamed:@"Star_ON.png"]) && (star3.image = [UIImage imageNamed:@"Star_ON.png"])&&
+        (star4.image = [UIImage imageNamed:@"Star_ON.png"]);
+    }
+    if (([restaurant averageCustomerReview] > 4.5) && ([restaurant averageCustomerReview] < 4.45)) { 
+        (star2.image = [UIImage imageNamed:@"Star_ON.png"]) && (star1.image = [UIImage imageNamed:@"Star_ON.png"]) && (star3.image = [UIImage imageNamed:@"Star_ON.png"]) &&
+        (star4.image = [UIImage imageNamed:@"Star_ON.png"])&&
+        (star5.image = [UIImage imageNamed:@"Star_ON.png"]);
+    } 
+    
+    
 }
-
-
 
 - (void)viewDidUnload
 {
