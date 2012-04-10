@@ -13,7 +13,7 @@
     NSString* name;
     NSString* cuisineType;
     int yearOpened;
-   NSMutableArray* reviews;
+    NSMutableArray* reviews;
 
 }
 @property(readwrite, strong) NSString* address;
