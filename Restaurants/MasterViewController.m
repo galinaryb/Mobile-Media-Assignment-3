@@ -5,6 +5,7 @@
 //
 
 #import "MasterViewController.h"
+#import "DetailViewController.h"
 
 @implementation MasterViewController
 
@@ -27,6 +28,15 @@
     return cell;
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    DetailViewController* detailVC = (DetailViewController*)
+    [segue destinationViewController];
+    UITableView* table = [self tableView];
+    NSIndexPath* indexPath = [table indexPathForSelectedRow];
+    Restaurant* currentRestaurant = [restaurants objectAtIndex:indexPath.row];
+    detailVC.restaurant = currentRestaurant;
+}
 
 - (void)awakeFromNib
 {

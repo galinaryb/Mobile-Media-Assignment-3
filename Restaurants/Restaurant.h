@@ -21,7 +21,7 @@
 @property(readwrite, strong) NSString* cuisineType;
 @property(readwrite) int yearOpened;
 @property(readwrite, strong) NSMutableArray* reviews;
-
+@property(readwrite, strong) NSString* DetailViewController;
 -(int)age;
 -(Review*) mostHelpfulReview;
 -(float) averageCustomerReview;

@@ -7,7 +7,7 @@
 #import "Review.h"
 
 @implementation Restaurant
-@synthesize address, name, cuisineType, yearOpened, reviews;
+@synthesize address, name, cuisineType, yearOpened, reviews, DetailViewController;
 
 
 
