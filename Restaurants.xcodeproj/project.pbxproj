@@ -21,6 +21,7 @@
 		0EE5A6ED14BEB491006BB5E1 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE5A6EC14BEB491006BB5E1 /* DetailViewController.m */; };
 		2E519D8015016B3F006E62C2 /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E519D7F15016B3F006E62C2 /* Review.m */; };
 		2EBF103B1538F95600E9BA1B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EBF10391538F95600E9BA1B /* MainStoryboard.storyboard */; };
+		2ED70592153B8AEB00528258 /* ReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED70591153B8AEB00528258 /* ReviewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		2E519D7E15016B3F006E62C2 /* Review.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Review.h; sourceTree = "<group>"; };
 		2E519D7F15016B3F006E62C2 /* Review.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Review.m; sourceTree = "<group>"; };
 		2EBF103A1538F95600E9BA1B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2ED70590153B8AEB00528258 /* ReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewViewController.h; sourceTree = "<group>"; };
+		2ED70591153B8AEB00528258 /* ReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 				0EE5A6E914BEB491006BB5E1 /* MasterViewController.m */,
 				0EE5A6EB14BEB491006BB5E1 /* DetailViewController.h */,
 				0EE5A6EC14BEB491006BB5E1 /* DetailViewController.m */,
+				2ED70590153B8AEB00528258 /* ReviewViewController.h */,
+				2ED70591153B8AEB00528258 /* ReviewViewController.m */,
 				0E2AFF8414DE3F3600456523 /* Mug.h */,
 				0E2AFF8514DE3F3600456523 /* Mug.m */,
 				0EE5A6DA14BEB490006BB5E1 /* Supporting Files */,
@@ -203,6 +208,7 @@
 				0E02F6BD14CD10E300C3EAE8 /* Restaurant.m in Sources */,
 				0E2AFF8614DE3F3600456523 /* Mug.m in Sources */,
 				2E519D8015016B3F006E62C2 /* Review.m in Sources */,
+				2ED70592153B8AEB00528258 /* ReviewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
