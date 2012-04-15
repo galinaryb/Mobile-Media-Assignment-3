@@ -23,9 +23,10 @@
 {
     NSString* cellIdentifier = @"RestaurantCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    cell.textLabel.text = @"Pio Pio";
-    cell.detailTextLabel.text = @"Peruvian";
+    cell.textLabel.text = [[restaurants objectAtIndex:indexPath.row] name];
+    cell.detailTextLabel.text = [[restaurants objectAtIndex:indexPath.row] cuisineType];
     return cell;
+
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -59,11 +60,17 @@
     Restaurant* piopio;
     piopio = [[Restaurant alloc] init];
     piopio.name = @"Pio Pio";
-    piopio.address = @"746 First Avenue\nNew York, NY 10128";
+    piopio.address = @"746 First Avenue, New York, NY 10128";
     piopio.cuisineType = @"Peruvian";
     piopio.yearOpened = 1995; 
-
     
+    Restaurant* teriyaki;
+    teriyaki = [[Restaurant alloc] init];
+    teriyaki.name = @"Teriyaki Boy";
+    teriyaki.address = @"1640 3rd Ave, New York, New York, 10128";
+    teriyaki.cuisineType = @"Japanese";
+    teriyaki.yearOpened = 1995; 
+
     Review* review1 = [[Review alloc] init];
     review1.text = @"What fab-u-lass chicken! We could eat it all day if we didn't have to stop to drink sangria!";
     review1.reviewer = @"The Addams";
@@ -101,7 +108,9 @@
     
     piopio.reviews = [[NSMutableArray alloc] initWithObjects: review1, review2, review3, review4, review5, nil];
     
-     self.restaurants = [[NSMutableArray alloc]initWithObjects: piopio, nil]; 
+    teriyaki.reviews = [[NSMutableArray alloc] initWithObjects: review1, review2, review3, review4, review5, nil];
+    
+     self.restaurants = [[NSMutableArray alloc]initWithObjects: piopio, teriyaki, nil]; 
 }
 
 - (void)viewDidUnload
