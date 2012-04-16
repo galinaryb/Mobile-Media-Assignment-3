@@ -30,7 +30,12 @@
 {
     NSString* cellIdentifier = @"ReviewCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    cell.textLabel.text = @"test";
+    UILabel* reviewTextLabel = (UILabel*) [cell viewWithTag:1];
+    UILabel* reviewHepfulnessLabel = (UILabel*) [cell viewWithTag:2];
+    Review* reviewForIndexPath = [restaurant.reviews objectAtIndex:indexPath.row];
+    reviewTextLabel.text = reviewForIndexPath.text;
+    reviewHepfulnessLabel.text = [NSString stringWithFormat:@"%i of %i found this review helpful", reviewForIndexPath.numberOfHelpfulReviews,
+                                  reviewForIndexPath.numberOfHelpfulReviews + reviewForIndexPath.numberOfHelpfulReviews];
     return cell;
 }
 
