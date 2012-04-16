@@ -5,6 +5,7 @@
 //
 
 #import "DetailViewController.h"
+#import "ReviewViewController.h"
 
 @implementation DetailViewController
 @synthesize addressLabel;
@@ -84,6 +85,11 @@ if (([restaurant averageCustomerReview] > 0.1) && ([restaurant averageCustomerRe
     [self setStar4:nil];
     [self setStar5:nil];
     [super viewDidUnload];
+}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    ReviewViewController* reviewVC = (ReviewViewController*) [segue destinationViewController];
+    reviewVC.restaurant = restaurant;
 }
 
 - (void)viewWillAppear:(BOOL)animated
