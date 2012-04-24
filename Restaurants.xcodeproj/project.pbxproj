@@ -22,6 +22,8 @@
 		2E519D8015016B3F006E62C2 /* Review.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E519D7F15016B3F006E62C2 /* Review.m */; };
 		2EBF103B1538F95600E9BA1B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EBF10391538F95600E9BA1B /* MainStoryboard.storyboard */; };
 		2ED70592153B8AEB00528258 /* ReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED70591153B8AEB00528258 /* ReviewViewController.m */; };
+		2EE02790153CE7B400E4C0D7 /* heart_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EE0278E153CE7B400E4C0D7 /* heart_selected.png */; };
+		2EE02791153CE7B400E4C0D7 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EE0278F153CE7B400E4C0D7 /* heart.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		2EBF103A1538F95600E9BA1B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		2ED70590153B8AEB00528258 /* ReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewViewController.h; sourceTree = "<group>"; };
 		2ED70591153B8AEB00528258 /* ReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewViewController.m; sourceTree = "<group>"; };
+		2EE0278E153CE7B400E4C0D7 /* heart_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_selected.png; sourceTree = "<group>"; };
+		2EE0278F153CE7B400E4C0D7 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 		0E6F215314F9FDFC004F682D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2EE0278E153CE7B400E4C0D7 /* heart_selected.png */,
+				2EE0278F153CE7B400E4C0D7 /* heart.png */,
 				0E6F215414F9FE0F004F682D /* Star_OFF.png */,
 				0E6F215514F9FE0F004F682D /* Star_ON.png */,
 			);
@@ -191,6 +197,8 @@
 				0E6F215614F9FE0F004F682D /* Star_OFF.png in Resources */,
 				0E6F215714F9FE0F004F682D /* Star_ON.png in Resources */,
 				2EBF103B1538F95600E9BA1B /* MainStoryboard.storyboard in Resources */,
+				2EE02790153CE7B400E4C0D7 /* heart_selected.png in Resources */,
+				2EE02791153CE7B400E4C0D7 /* heart.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

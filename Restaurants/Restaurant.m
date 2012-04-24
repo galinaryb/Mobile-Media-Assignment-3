@@ -7,7 +7,7 @@
 #import "Review.h"
 
 @implementation Restaurant
-@synthesize address, name, cuisineType, yearOpened, reviews, DetailViewController;
+@synthesize address, name, cuisineType, yearOpened, reviews, DetailViewController, isFavorite;
 
 
 
@@ -46,7 +46,8 @@
     
 }
 
--(float) averageCustomerReview{
+-(float) averageCustomerReview
+{
     int sum = 0;
     for (Review* storage in reviews)
     {
@@ -54,7 +55,11 @@
     }
     
     return (float) sum/[reviews count];
-    
-    
 }
+
+
+
+
+
+
 @end

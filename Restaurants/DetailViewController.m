@@ -8,6 +8,7 @@
 #import "ReviewViewController.h"
 
 @implementation DetailViewController
+@synthesize favoriteButton;
 @synthesize addressLabel;
 @synthesize navigationHeader;
 @synthesize cuisineLabel;
@@ -32,7 +33,10 @@
     ageLabel.text = [NSString stringWithFormat:@"Est. %i (%i years ago)", restaurant.yearOpened, [restaurant age]];
     
    
-    
+    if (restaurant.isFavorite){
+        
+    favoriteButton.image = ([UIImage imageNamed:@"heart_selected.png"]);
+    }
     
     Review* mostHelpful=[restaurant mostHelpfulReview];
     
@@ -84,6 +88,7 @@ if (([restaurant averageCustomerReview] > 0.1) && ([restaurant averageCustomerRe
     [self setStar3:nil];
     [self setStar4:nil];
     [self setStar5:nil];
+    [self setFavoriteButton:nil];
     [super viewDidUnload];
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -119,4 +124,12 @@ if (([restaurant averageCustomerReview] > 0.1) && ([restaurant averageCustomerRe
 }
 
 
+    
+- (IBAction)markAsFavorite:(id)sender {
+    restaurant.isFavorite = !restaurant.isFavorite;
+    if (restaurant.isFavorite){
+    favoriteButton.image = ([UIImage imageNamed:@"heart_selected.png"]);
+    }
+    else favoriteButton.image = ([UIImage imageNamed:@"heart.png"]);
+}
 @end
